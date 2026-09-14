@@ -1,2 +1,38 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+:root {
+  /* Pitch Black Backgrounds for that distraction-free Kabi vibe */
+  --ion-background-color: #000000;
+  --ion-text-color: #ffffff;
+
+  /* Primary Accent (Sleek White/Silver for high contrast) */
+  --ion-color-primary: #ffffff;
+  --ion-color-primary-rgb: 255, 255, 255;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-shade: #e0e0e0;
+  --ion-color-primary-tint: #ffffff;
+
+  /* Secondary Accent (Muted Gray for secondary text/icons) */
+  --ion-color-secondary: #27272a;
+  --ion-color-secondary-rgb: 39, 39, 42;
+  --ion-color-secondary-contrast: #ffffff;
+
+  /* Tertiary Accent (Electric/Neon color if you want a pop on buttons) */
+  --ion-color-tertiary: #3b82f6; 
+  --ion-color-tertiary-rgb: 59, 130, 246;
+  --ion-color-tertiary-contrast: #ffffff;
+
+  /* Form and item backgrounds */
+  --ion-item-background: #000000;
+  --ion-card-background: #09090b;
+}
+
+/* Force dark mode across the app */
+body {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+/* Custom styling to remove Ionic's default borders for a cleaner look */
+ion-item {
+  --border-color: #27272a;
+  --inner-padding-end: 0px;
+}
