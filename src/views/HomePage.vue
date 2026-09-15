@@ -1,7 +1,4 @@
 <script setup lang="ts">
-// ----------------------------------------------------------------------
-// IMPORTS
-// ----------------------------------------------------------------------
 import { ref, computed, onMounted } from 'vue';
 import {
   IonPage, IonHeader, IonToolbar, IonTitle, IonContent,
@@ -301,7 +298,7 @@ onMounted(() => {
 ---------------------------------------------------------------------- */
 .workout-list {
   background: transparent;
-  padding-bottom: 80px; /* Leaves space so the bottom bar doesn't overlap the last item */
+  padding-bottom: 140px; 
 }
 
 /* Base styling for the dark block components */
@@ -421,8 +418,9 @@ onMounted(() => {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 16px;
-  background: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
+  /* padding: top right bottom left */
+  padding: 16px 16px 70px 16px; 
+  background: linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
   z-index: 10;
 }
 
